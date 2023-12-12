@@ -31,7 +31,7 @@ html {
 }
 
 .sidebar:hover::-webkit-scrollbar-thumb {
-    background-color: var(--color-main);
+    background-color: #5565ff;
     border-radius: 5px;
 }
 
@@ -72,7 +72,7 @@ html {
 .feature__list-title {
     display: block;
     padding-left: 20px;
-    color: rgb(230 245 128);
+    color: #5565ff;
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 10px;
