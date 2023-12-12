@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Công ty may mặc GUMDAM</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" style="color: black; background-color: black" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                <img src="./img/logo.png" alt="" class="sidebar__logo-img" />
+                <span class="sidebar__logo-title">Công ty may mặc GUNDAM</span>
+            </div>
+            <div class="feature">
+                <span class="feature__list-title">Chức năng của chung</span>
+                <ul class="feature__list" id="feature__leader">
+                    <li class="feature__list-item">
+                        <a href="#dangnhap">Đăng Nhập</a>
+                    </li>
+                    <!-- <li class="feature__list-item">
+              <a href="#dangxuat">Đăng Xuất</a>
+            </li> -->
+                    <li class="feature__list-item">
+                        <a href="#quenmatkhau">Quên Mật Khẩu</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#xemthongtincanhan">Xem Thông Tin Cá Nhân</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="feature">
+                <span class="feature__list-title">Chức năng của Trưởng phòng nhân sự</span>
+                <ul class="feature__list" id="feature__epl">
+                    <li class="feature__list-item">
+                        <a href="#themcongnhan">Thêm Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#capnhapthongtincongnhan">Cập Nhật Thông Tin Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#chamcongcongnhan">Chấm Công Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#capnhatchamcongcongnhan">Cập Nhật Chấm Công Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#themnhanvien">Thêm Nhân Viên</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#capnhatthongtinnhanvien">Cập Nhật Thông Tin Nhân Viên</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#chamcongnhanvien">Chấm Công Nhân Viên</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#capnhatchamcongnhanvien">Cập Nhật Chấm Công Nhân Viên</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="feature">
+                <span class="feature__list-title">Chức năng của Trưởng phòng sản xuất</span>
+                <ul class="feature__list" id="feature__leader">
+                    <li class="feature__list-item">
+                        <a href="#phanchiacongdoansanpham">Phân Chia Công Đoạn Cho Sản Phẩm</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#phanchiacongdoanchocongnhan">Phân Chia Công Đoạn Cho Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#themhopdong">Thêm Hợp Đồng</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#capnhathopdong">Cập Nhật Hợp Đồng</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#themsanpham">Thêm Sản Phẩm</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#capnhatsanpham">Cập Nhật Sản Phẩm</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="feature">
+                <span class="feature__list-title">Chức năng của kế toán</span>
+                <ul class="feature__list" id="feature__leader">
+                    <li class="feature__list-item">
+                        <a href="#tinhluongnhanvien">Tính Lương Nhân Viên</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#chitietluongnv">Xem Chi Tiết Lương Nhân Viên</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#tinhluongcongnhan">Tính Lương Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#chitietluongcn">Xem Chi Tiết Lương Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#thongkeluongcongnhan">Thống Kê Lương Công Nhân</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#thongkeluongnhanvienhanhchanh">Thống Kế Lương Nhân Viên Hành Chánh</a>
+                    </li>
+                    <li class="feature__list-item">
+                        <a href="#thongkekpi">Thống Kế KPI Công Nhân</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__item" id="dangnhap">
+                <h1 class="title">Chức năng đăng nhập:</h1>
+                <div class="img__parent">
+                    <img src="./img/login.png" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    Nhập thông tin tài khoản, mật khẩu và nhấn đăng nhập<br />
+                    - Tên đăng nhập là mã nhân viên<br />
+                    - Mật khẩu <br />
+                    Sau đó nhấn nút “đăng nhập”<br />
+                </p>
+            </div>
+            <div class="content__item" id="quenmatkhau">
+                <h1 class="title">Chức năng quên mật khẩu</h1>
+                <p class="content__des">
+                    Nếu quên mật khẩu, hãy nhấn “Quên mật khẩu”
+                </p>
+                <div class="img__parent">
+                    <img src="./img/quenmatkhau_1.png" alt="" class="content__img" />
+                </div>
+                <p class="content__des">Nhập tên đăng nhập và chọn gửi mã OTP</p>
+                <div class="img__parent">
+                    <img src="./img/quenmatkhau_2.png" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    Hệ thống sẽ gửi mã OTP đến với email đã đăng ký với tài khoản .
+                    Sau đó nhập mã OTP vừa nhận, mật khẩu mới cho tài khoản và nhấn xác nhận.
+                </p>
+                <div class="img__parent">
+                    <img src="./img/quenmatkhau_3.png" alt="" class="content__img" />
+                </div>
+            </div>
+            <div class="content__item" id="xemthongtincanhan">
+                <h1 class="title">Chức năng Xem Thông Tin Cá Nhân</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="themcongnhan">
+                <h1 class="title">Chức Năng Thêm Công Nhân</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="capnhapthongtincongnhan">
+                <h1 class="title">Chức Năng Cập Nhật Thông Tin Công Nhân</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="chamcongcongnhan">
+                <h1 class="title">Chức Năng Chấm Công Công Nhân</h1>
+                <p class="content__des">
+                    B1: Nhấn vào chức năng chấm công công nhân
+                </p>
+                <div class="img__parent">
+                    <img src="./img/chamcongcongnhan_1.png" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    B2: Chọn công nhân cần chấm công, sau đó nhập số lượng hoàn thành của công nhân và nhấn chấm công.
+                </p>
+                <div class="img__parent">
+                    <img src="./img/chamcongcongnhan_2.png" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    Ngoài ta ta có thể chọn chấm công hàng loạt để chấm công cho tất cả công nhân.
+                    Lưu ý: Chấm công hàng loạt sẽ tự động lấy số lượng sản phẩm còn lại của công nhân là số lượng hoàn thành
+                    trong ngày.
+                </p>
+            </div>
+            <div class="content__item" id="capnhatchamcongcongnhan">
+                <h1 class="title">Chức Năng Cập Nhật Chấm Công Công Nhân</h1>
+                <p class="content__des">
+                    B1: Nhấn đúp chuột vào ô số lượng hoàn thành của công nhân đã được chấm ở bảng “Danh sách chấm công”
+                    B2: Nhập số lượng cần sửa và nhấn cập nhật.
+    
+                </p>
+                <div class="img__parent">
+                    <img src="./img/capnhatchamcongcongnhan_1.png" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    Lưu ý: Cập nhật chấm công chỉ thực hiện được trong ngày đang chấm công.
+                </p>
+    
+            </div>
+            <div class="content__item" id="themnhanvien">
+                <h1 class="title">Chức Năng Thêm Nhân Viên</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="capnhapthongtinnhanvien">
+                <h1 class="title">Chức Năng Cập Nhật Thông Tin Nhân Viên</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="capnhatchamcongnhanvien">
+                <h1 class="title">Chức Năng Cập Nhật Chấm Công Nhân Viên</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/capnhatchamcongcongnhan_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="chamcongnhanvien">
+                <h1 class="title">Chức Năng Chấm Công Nhân Viên</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="phanchiacongdoansanpham">
+                <h1 class="title">Chức Năng Phân Chia Công Đoạn Cho Sản Phẩm</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="phanchiacongdoanchocongnhan">
+                <h1 class="title">Chức Năng Phân Chia Công Đoạn Cho Công Nhân</h1>
+                <p class="content__des">
+                    B1: Chọn chức năng Phân công cho công nhân.
+                </p>
+                <div class="img__parent">
+                    <img src="./img/phanchiacongdoanchocn_1.png" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    B2: Chọn công đoạn sản phẩm và công nhân cần chia, nhập số lượng cần phải hoàn thành và nhấn nút “Phân
+                    công”.
+                </p>
+                <div class="img__parent">
+                    <img src="./img/phanchiacongdoanchocn_2.png" alt="" class="content__img" />
+                </div>
+            </div>
+            <div class="content__item" id="themhopdong">
+                <h1 class="title">Chức Năng Thêm Hợp Đồng</h1>
+                <p class="content__des">
+                    B1: Chọn vào “Hợp đồng”, sau đó chọn “Thêm”
+                </p>
+                <div class="img__parent">
+                    <img src="./img/themhopdong.png" alt="" class="content__img" />
+                </div>
+                <div class="content__des">Sau đó hệ thống sẽ hiển thị một dialog Thêm hợp đồng.</div>
+            </div>
+            <div class="content__item" id="capnhathopdong">
+                <h1 class="title">Chức Năng Cập Nhật Hợp Đồng</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="themsanpham">
+                <h1 class="title">Chức Năng Thêm Sản Phẩm</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="capnhatsanpham">
+                <h1 class="title">Chức Năng Cập Nhật Sản Phẩm</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="tinhluongnhanvien">
+                <h1 class="title">Chức Năng Tính Lương Nhân Viên</h1>
+                <p class="content__des">
+                    Chọn Chức Năng Tính Lương Nhân Viên . Hệ thống sẽ tự động lấy dữ liệu từ tháng trước để hiển thị thông tin lương .
+                </p>
+                <div class="img__parent">
+                    <img src="./img/tinhluongnhanvien_1.jpg" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    Ngoài ra, bạn có thể tùy chọn lọc nhân viên mà bạn muốn hiển thị ở các thanh lọc trên màn hình gồm tháng, năm, phòng ban và có thể lọc theo mã/tên nhân viên muốn lọc . Từ đó hệ thống sẽ hiển thị dữ liệu như mong muốn
+                </p>
+                <div class="img__parent">
+                    <img src="./img/tinhluongnhanvien_2.jpg" alt="" class="content__img" />
+                </div>
+            </div>
+            <div class="content__item" id="chitietluongnv">
+                <h1 class="title">Chức Năng Xem Chi Tiết Lương Nhân Viên</h1>
+                <p class="content__des">
+                    Sau khi hiển thị danh sách lương nhân viên.Bạn có thể click vào nhân viên đó . Hệ thống sẽ hiển thị chi tiết lương nhân viên đó.
+                </p>
+                <div class="img__parent">
+                    <img src="./img/chitietluongnv.jpg" alt="" class="content__img" />
+                </div>
+            </div>
+            <div class="content__item" id="tinhluongcongnhan">
+                <h1 class="title">Chức Năng Tính Lương Công Nhân</h1>
+                <p class="content__des">
+                    Chọn Chức Năng Tính Lương Công Nhân . Hệ thống sẽ tự động lấy dữ liệu từ tháng trước để hiển thị thông tin lương .
+                </p>
+                <div class="img__parent">
+                    <img src="./img/tinhluongcongnhan_1.jpg" alt="" class="content__img" />
+                </div>
+                <p class="content__des">
+                    Ngoài ra, bạn có thể tùy chọn lọc công nahan mà bạn muốn hiển thị ở các thanh lọc trên màn hình gồm tháng, năm, phân xưởng và có thể lọc theo mã/tên công nhân muốn lọc . Từ đó hệ thống sẽ hiển thị dữ liệu như mong muốn
+                </p>
+                <div class="img__parent">
+                    <img src="./img/tinhluongcongnhan_2jpg.jpg" alt="" class="content__img" />
+                </div>
+            </div>
+            <div class="content__item" id="chitietluongcn">
+                <h1 class="title">Chức Năng Xem Chi Tiết Lương Công Nhân</h1>
+                <p class="content__des">
+                    Sau khi hiển thị danh sách lương công nhân.Bạn có thể click vào công nhân đó . Hệ thống sẽ hiển thị chi tiết lương công nhân đó.
+                </p>
+                <div class="img__parent">
+                    <img src="./img/chitietluongcongnhan.jpg" alt="" class="content__img" />
+                </div>
+            </div>
+            <div class="content__item" id="thongkeluongcongnhan">
+                <h1 class="title">Chức Năng Thống Kê Lương Công Nhân</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+            <div class="content__item" id="thongkekpi">
+                <h1 class="title">Chức Năng Thống Kê KPI Công Nhân</h1>
+                <p class="content__des">
+                </p>
+                <div class="img__parent">
+                    <!-- <img src="./img/quenmatkhau_1.png" alt="" class="content__img" /> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./assest/js/main.js"></script>
+</body>
+
+</html>
